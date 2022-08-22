@@ -1,0 +1,372 @@
+*{font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(153, 3, 3, 0.7)),url(img/im1.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+    }
+
+.nav-link{
+    flex: 1;
+    text-align: right;
+    
+}
+
+.nav-link ul li{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+
+}
+
+.nav-link ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: larger;
+}
+
+nav img{
+    width: 100px;
+}
+
+.nav-link ul li::after{
+    content: "";
+    width: 0%;
+    background: rgb(188, 30, 209);
+    height: 3px;
+    display: block;
+    transition: 1s;
+}
+
+.nav-link ul li:hover:after{
+        width: 100%;
+    }
+
+    .text-box{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        top: 25%;
+        position: relative;
+            }
+
+    .text-box h1{
+        font-size: 62px;
+        color: aliceblue;
+        margin-bottom: 0%;
+
+    }
+
+    .text-box p{
+        font-size: 14px;
+        color: aliceblue;
+        margin-bottom: 40px;
+    }
+
+  
+    .customize1{
+        font-size: 24px;
+        border: rgb(184, 46, 182) solid 2px;
+        border-radius: 5px;
+        color: rgb(106, 4, 115);
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+
+    .customize1:hover{
+        background: rgb(230, 70, 195);
+        transition: 0.5s;
+        box-shadow: 0 0 10px 0 rgb(222, 199, 199);
+        padding: 11px;
+        color: white;
+    }
+
+
+    .customize{
+        font-size: 24px;
+        border: rgb(255, 255, 255) solid 2px;
+        border-radius: 5px;
+        color: aliceblue;
+        padding: 10px 10px;
+        
+        text-decoration: none;
+    }
+
+    .customize:hover{
+        background: rgb(230, 70, 195);
+        transition: 0.3s;
+        box-shadow: 0 0 10px 0 rgb(222, 199, 199);
+        padding: 11px;
+    }
+
+    
+    
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 30px;}
+     nav img{
+            width: 80px;
+        }
+     .nav-link ul li{
+           display: block;}
+     .nav-link{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 200px;
+                background: red;
+                text-align: left;
+                border-radius: 10px;
+                transition: 1s;}
+                
+    .nav-link ul li:hover:after{
+                    width:50%;
+                }            
+        }
+
+        /* <!-- ........................about........................... --> */
+        #about{
+            width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 0%;
+    text-align: center;
+        }
+/* the main thing here is the flex */
+        .row{ margin-top: 1%;
+            height: auto;
+            display: flex;
+        }
+
+.about-col{
+    flex-basis: 40%;
+    background: rgb(255, 255, 255);
+    padding: 5px;
+    margin: auto;
+    border-radius: 10px;
+   text-align: left; 
+   box-sizing: border-box;
+   padding-bottom: 40px;
+    }
+
+   
+
+h3 .range{
+   width:400px ;
+   height: 15px;
+   background: rgb(207, 202, 202);
+     border: rgb(214, 208, 208) solid 2px; 
+     font-size: 14px; 
+     text-align: left;
+       border-radius: 10px;
+}
+
+h3 .bars1{
+    width:200px ;
+    float: left;
+     display: inline;
+      height: 10px;
+      background: rgb(136, 9, 138);
+     
+} 
+h3 .bars2{
+    width:300px ;
+    float: left;
+     display: inline;
+      height: 10px;
+      background: rgb(136, 9, 138);
+     
+} 
+h3 .bars3{
+    width:350px ;
+    float: left;
+     display: inline;
+      height: 10px;
+      background: rgb(136, 9, 138);
+     
+} 
+
+
+/* ........................our services....................... */
+#service{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(img/im1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: auto;
+    height: 70%;
+    color: white;
+    padding: 20px 5px;
+}
+
+.service1{
+    margin-right: auto  ;
+}
+
+.service-col{
+    flex-basis: 18%;
+    color: aliceblue;
+    margin: auto;
+    align-items: center;
+    }
+
+    .service-col:hover{
+        background: rgb(226, 43, 223);
+        border-radius: 10px;
+        
+        }
+        
+
+    .service h1{
+font-size: 30px;
+    }
+
+    .service-col p{
+        font-size: 15px;
+            }
+
+.service-col img{
+    width: 80px;
+}
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+                display: block;
+    }
+    
+}
+
+
+/* ......................team...................../ */
+#team{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.team h1{
+    font-size: 34px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+}
+
+.team-col{
+    /* the flex basis determine the sixe of the column. especially the text */
+flex-basis: 10%;
+text-align: center;
+margin: auto;
+padding: 5px;
+}
+
+.team-col h3{
+    color: blueviolet;
+}
+
+.team-col:hover h3{
+    color: rgb(249, 248, 250);
+}
+
+
+.team-col:hover{
+    background: rgb(226, 43, 223);
+    border-radius: 10px;
+   
+    color: white;
+    }
+
+.team-col img{
+width: 200px;
+height: 100%;
+}
+
+/* .....................GIT................ */
+#git{
+    padding: 7px;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    background: rgb(215, 205, 205);
+    border-radius: 7px;
+}
+
+.git h1{
+
+}
+
+
+
+
+.git-col1{flex-basis: 25%;
+    margin: auto;
+    display: block;
+}
+
+label{
+    display: block;
+    padding: 5px;
+}
+
+.git-col2{
+    flex-basis: 25%;
+    margin: auto;
+    display: block;
+}
+
+input[type="submit"]{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: larger;
+    border-color: aliceblue;
+}
+
+input[type="submit"]:hover{
+    padding: 10px 15px;
+    border-radius: 7px;
+    color: aliceblue;
+    background: rgb(206, 81, 206);
+}
+
+/* ........................footer.................... */
+.footer{
+    text-align: center;
+    margin: auto;
+    background: rgb(68, 4, 63);
+    color: rgb(206, 215, 224);
+}
+
+
+
+.navcose{
+    display: flex;
+    justify-content: center;
+}
+
+.navclose p{
+    /* only that having list of things will go right and that was why li in the first nav used at the top, went to the left */
+    flex: 1;
+    text-align: right;
+}
+
+.navclose a{
+    color: aliceblue;
+}
