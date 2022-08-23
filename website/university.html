@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="university.css">
+    <title>university website</title>
+</head>
+<body>
+    <section class="header">
+        <nav> 
+            <img src="home.jpg" alt="home">
+            <div class="nav-links" id="navlinks">
+                <!-- i want to add a closing icon here for the mini screen. but since i dont have data, i will just use a mini image and i later added the onclick for java script for javascript -->
+             <img src="home.jpg" alt="" class="icon1" onclick="hidemenu()">
+               <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="index.html">COURSE</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+               </ul>
+            </div>
+            <!-- for javascript -->
+             <img src="interior.jpg" alt="" class="icon1" onclick="showmenu()">
+             
+        </nav>
+            <div class="text-box">
+               <h1> LIGHT BEARERS' UNIVERSITY</h1>
+               <p>expanding the knowledge of Diligence in the heart of students in line with God's agender <br> and bringing out the best in them</p>
+            <a href="#" class="hero-btn">Visit us to know more</a>
+            </div>
+    </section>
+
+    <!----------------------- Course ------------------>
+     <section class="course">
+<h1>Courses We offer</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+<div class="row">
+    <div class="course-col">
+        <h3>Intermediate</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione reprehenderit assumenda obcaecati pariatur quasi voluptate nemo eveniet cum aut, dolorum, voluptas deleniti dignissimos eos quibusdam non corrupti mollitia alias.</p>
+    </div>
+    <div class="course-col">
+        <h3>Degrees</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione reprehenderit assumenda obcaecati pariatur quasi voluptate nemo eveniet cum aut, dolorum, voluptas deleniti dignissimos eos quibusdam non corrupti mollitia alias.</p>
+    </div>
+    <div class="course-col">
+        <h3>Post Graduate</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione reprehenderit assumenda obcaecati pariatur quasi voluptate nemo eveniet cum aut, dolorum, voluptas deleniti dignissimos eos quibusdam non corrupti mollitia alias.</p>
+    </div>
+       </div>
+     </section>
+
+     <!-------------campus ---------------->
+     
+     <section class="campus">
+         <h1>Our Global Campus</h1>
+         <p>Lorem ipsum dolor sit amet.</p>
+
+         <div class="row">
+             <div class="campus-col">
+                 <img src="img/i3.jpg" >
+                 <div class="layer">
+                     <h3>LONDON</h3>
+                 </div>
+             </div>
+             <div class="campus-col">
+                <img src="img/i4.jpg" >
+                <div class="layer">
+                    <h3>AMERICA</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="img/i2.jpg" >
+                <div class="layer">
+                    <h3>CANADA</h3>
+                </div>
+            </div>
+         </div>
+     </section>
+
+     <!-------------  facilities ---------------->
+     <section class="facilities">
+         <h1>Our Facilities</h1>
+         <p>Lorem ipsum dolor sit amet.</p>
+
+        <div class="row">
+         <div class="facilities-col">
+         <img src="img/i2.jpg" alt="">
+          <h3>World class library</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, consequuntur.</p>
+         </div>
+         <div class="facilities-col">
+            <img src="img/i1.jpg" alt="">
+             <h3>World class library</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, consequuntur.</p>
+            </div>
+      <div class="facilities-col">
+         <img src="img/i4.jpg" alt="">
+         <h3>World class library</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, consequuntur.</p>
+        </div>      
+        </div>
+     </section>
+
+     <section class="testimonial">
+         <h1>Our students Reports</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+         <div class="row">
+             <div class="testimonial-col">
+                 <img src="img/tee.jpg" alt="">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptate.ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptate.</p>
+                <h3>Adekunle David</h3>
+             </div>
+             <div class="testimonial-col">
+                <img src="img/tee.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptate.ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptate.</p>
+                <h3>Adekunle Taiye</h3>
+            </div>
+
+         </div>
+     </section>
+<!-- java script for toggle menu -->
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu(){navlinks.style.right ="0";}
+        function hidemenu(){navlinks.style.right ="-200px";}
+    </script>
+</body>
+</html>
